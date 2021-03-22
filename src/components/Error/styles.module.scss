@@ -1,0 +1,99 @@
+.error {
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    @media (max-width: 1170px) {
+        padding: 0 20px;
+    }
+
+    &__message {
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 110%;
+
+        @media (max-width: 700px) {
+            font-size: 30px;
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 340.383px;
+        line-height: 145%;
+        text-align: center;
+        margin: 0;
+        font-family: "Badoni Moda Bold", sans-serif;
+
+        @media (max-width: 700px) {
+            font-size: 100px;
+        }
+    
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 700px) {
+            flex-direction: column;
+        }
+
+        &__link {
+            width: 238px;
+            padding: 20px 80px 20px 20px;
+            background: #000;
+            color: #fff;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 19px;
+            display: flex;
+            justify-content: space-between;
+            text-decoration: none;
+
+            img {
+                max-width: 40px;
+            }
+        }
+
+        &__title {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 110%;
+        }
+
+        &__text {
+            font-size: 20px;
+            line-height: 155%;
+            max-width: 767px;
+
+            @media (max-width: 700px) {
+                font-size: 18px;
+            }
+        }
+
+        &__left {
+            width: 40%;
+
+            @media (max-width: 700px) {
+                margin-top: 50px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+    
+        }
+
+        &__right {
+            width: 60%;
+
+            @media (max-width: 700px) {
+                margin-top: 50px;
+                flex-direction: column;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+}

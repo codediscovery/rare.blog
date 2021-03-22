@@ -1,0 +1,29 @@
+.archive {
+    margin-top: 80px;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+
+        a {
+            color: #000;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 155%;
+            margin-bottom: 10px;
+            text-decoration: none;
+            transition: .2s;
+
+            &:hover {
+                color: #726f9e;
+            }
+        }
+    }
+}

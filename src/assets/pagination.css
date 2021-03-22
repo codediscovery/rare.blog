@@ -1,0 +1,41 @@
+.pagination {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.pagination li {
+    display: inline-block;
+}
+
+.pagination li.disabled {
+    display: inline-block;
+    opacity: 0.2;
+}
+
+.pagination li a {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    line-height: 170%;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.pagination li.active a {
+    position: relative;
+    color: #000;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.pagination li.active a:before {
+    position: absolute;
+    bottom: -2px;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #000;
+    display: block;
+}

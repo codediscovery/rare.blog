@@ -1,0 +1,92 @@
+.article {
+    margin-top: 200px;
+    padding: 0 20px 200px;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+
+        p,
+        ul,
+        blockquote {
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 145%;
+        text-align: center;
+        max-width: 770px;
+        margin: 0 auto;
+    }
+
+    &__previewImg {
+        width: 100%;
+    }
+
+    &__previewImgText {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.4);
+        font-size: 12px;
+        line-height: 155%;
+        margin: 10px 0;
+    }
+
+    &__info {
+        font-size: 12px;
+        line-height: 155%;
+        text-transform: uppercase;
+        display: flex;
+        margin: 30px auto 40px;
+        width: max-content;
+        max-width: 100%;
+
+        @media (max-width: 700px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        span {
+            position: relative;
+            margin: 0 12px;
+
+            @media (max-width: 700px) {
+                margin-bottom: 20px;
+            }
+
+            &:after {
+                position: absolute;
+                top: 7px;
+                right: -15px;
+                content: "";
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background: #000;
+                display: block;
+
+                @media (max-width: 700px) {
+                    left: 50%;
+                    top: 25px;
+                }
+            }
+
+            &:nth-child(3) {
+                &:after {
+                    content: "";
+                    display: none;
+                }
+
+                // max-width: 120px;
+                // height: 18px;
+                // overflow: hidden;
+                // text-overflow: ellipsis;
+                // overflow: hidden;
+                // height: 1.2em;
+                // white-space: nowrap;
+            }
+        }
+    }
+}

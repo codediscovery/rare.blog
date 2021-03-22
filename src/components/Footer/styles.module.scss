@@ -1,0 +1,128 @@
+@import "../../assets/variables.scss";
+
+.footer {
+    background: $primary;
+    padding: 45px 0 84px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        @media (max-width: $tb_bp) {
+            flex-direction: column;
+        }
+    }
+
+    &__topNav {
+        display: flex;
+
+        @media (max-width: $sp_bp) {
+            flex-wrap: wrap;
+        }
+
+        &__link {
+            margin-right: 41px;
+            display: block;
+            font-size: 18px;
+            line-height: 19px;
+            color: rgba(255, 255, 255, 0.8);
+            letter-spacing: 1px;
+            text-decoration: none;
+
+            @media (max-width: $sp_bp) {
+                width: 50%;
+                margin: 0 0 20px;
+            }
+        }
+    }
+
+    &__socBrands {
+        padding-top: 2px;
+
+        @media (max-width: $tb_bp) {
+            padding-top: 20px;
+            display: none;
+        }
+
+        i {
+            font-size: 20px !important;
+            margin-left: 20px !important;
+            color: #fff;
+
+            @media (max-width: $tb_bp) {
+                margin: 0 20px 0 0 !important;
+            }
+        }
+    }
+
+    &__brands {
+        display: flex;
+        flex-wrap: wrap;
+        width: 255px;
+        min-width: 255px;
+        justify-content: space-between;
+
+        @media (max-width: $tb_bp) {
+            display: none;
+        }
+
+        img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 40px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__socBrandsMobile {
+        display: none;
+
+        @media (max-width: $tb_bp) {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+    }
+
+    &__brandsMobile {
+        display: none;
+
+        @media (max-width: $tb_bp) {
+            display: flex;
+            margin: 30px auto;
+        }
+    }
+
+    &__copyright {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 18px;
+        margin: 30px 0 0;
+    }
+
+    &__bottomNav {
+        margin-top: 5px;
+        display: flex;
+
+        @media (max-width: $dt_bp) {
+            flex-wrap: wrap;
+        }
+
+        &__link {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 18px;
+            padding-right: 5px;
+            margin-right: 5px;
+            border-right: 2px solid rgba(255, 255, 255, 0.5);
+            display: block;
+            letter-spacing: 0.6px;
+            text-decoration: none;
+
+            &:last-child {
+                border: 0;
+            }
+        }
+    }
+}
